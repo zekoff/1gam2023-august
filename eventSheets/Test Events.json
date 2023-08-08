@@ -1,0 +1,134 @@
+{
+	"name": "Test Events",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "Debug Events"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 500786224622133
+				}
+			],
+			"actions": [
+				{
+					"id": "set-size",
+					"objectClass": "TerrainArray",
+					"sid": 764939219603262,
+					"parameters": {
+						"width": "10",
+						"height": "5",
+						"depth": "1"
+					}
+				}
+			],
+			"sid": 654671671464094,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 182799945627273,
+							"parameters": {
+								"name": "\"row\"",
+								"start-index": "0",
+								"end-index": "4"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 360059246491755,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 733703947983895,
+									"parameters": {
+										"name": "\"column\"",
+										"start-index": "0",
+										"end-index": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "LogDebugMessage",
+									"sid": 682992086954008,
+									"parameters": [
+										"\"Tile row \" & loopindex(\"row\") & \" and column \" & loopindex(\"column\")"
+									]
+								},
+								{
+									"id": "set-at-xy",
+									"objectClass": "TerrainArray",
+									"sid": 119669284044841,
+									"parameters": {
+										"x": "loopindex(\"column\")",
+										"y": "loopindex(\"row\")",
+										"value": "\"Mine\""
+									}
+								}
+							],
+							"sid": 946396544399721
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "TerrainArray",
+							"sid": 877928425091420,
+							"parameters": {
+								"axes": "xy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 239152435785940,
+							"parameters": {
+								"object-to-create": "Tile",
+								"layer": "0",
+								"x": "TerrainArray.CurX * 150 + 100",
+								"y": "TerrainArray.CurY * 150 + 100",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						},
+						{
+							"callFunction": "LogDebugMessage",
+							"sid": 259698984307229,
+							"parameters": [
+								"\"Tile content: \" & TerrainArray.CurValue & newline"
+							]
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Tile",
+							"sid": 182342043565509,
+							"parameters": {
+								"animation": "TerrainArray.CurValue",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 449739472657934
+				}
+			]
+		}
+	],
+	"sid": 374305034468511
+}

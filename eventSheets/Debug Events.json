@@ -1,0 +1,104 @@
+{
+	"name": "Debug Events",
+	"events": [
+		{
+			"functionName": "LogDebugMessage",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "message",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 592881761585868
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "push",
+					"objectClass": "DebugLog",
+					"sid": 904588899459910,
+					"parameters": {
+						"where": "back",
+						"value": "message",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "DebugLogDisplay",
+					"sid": 636037434921640,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 604171215796364,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "while",
+							"objectClass": "System",
+							"sid": 733997433300398
+						},
+						{
+							"id": "compare-size",
+							"objectClass": "DebugLog",
+							"sid": 909010343857408,
+							"parameters": {
+								"axis": "x",
+								"comparison": 4,
+								"value": "20"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pop",
+							"objectClass": "DebugLog",
+							"sid": 488240068230597,
+							"parameters": {
+								"where": "front",
+								"axis": "x"
+							}
+						}
+					],
+					"sid": 948917074038812
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each-element",
+							"objectClass": "DebugLog",
+							"sid": 717471727780104,
+							"parameters": {
+								"axes": "x"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "append-text",
+							"objectClass": "DebugLogDisplay",
+							"sid": 541508919099716,
+							"parameters": {
+								"text": "DebugLog.CurValue & newline"
+							}
+						}
+					],
+					"sid": 594153664946798
+				}
+			]
+		}
+	],
+	"sid": 467474962555355
+}
