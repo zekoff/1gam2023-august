@@ -196,46 +196,7 @@
 					}
 				],
 				"sid": 133597554864815,
-				"name": "House 1",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 120,
-						"height": 140,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "lossless",
-						"exportQuality": 0.8,
-						"imageSpriteId": 9465174,
-						"collisionPoly": {
-							"points": [
-								0.5083333333333333,
-								0,
-								1,
-								0.25,
-								1,
-								0.7571428571428571,
-								0.49166666666666664,
-								1,
-								0,
-								0.7571428571428571,
-								0.016666666666666666,
-								0.2357142857142857
-							]
-						},
-						"useCollisionPoly": true,
-						"duration": 1
-					}
-				],
-				"sid": 390360931227228,
-				"name": "House 2",
+				"name": "Farm",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -313,7 +274,7 @@
 					}
 				],
 				"sid": 155624379355245,
-				"name": "Shed",
+				"name": "Stable",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -587,6 +548,318 @@
 				],
 				"sid": 950943649411734,
 				"name": "Windmill",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3142520,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 231302380376055,
+				"name": "Empty",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3771295,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 625626053331575,
+				"name": "Trees 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1688474,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 714046976588131,
+				"name": "Trees 2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 760090,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 426998050676977,
+				"name": "Trees 3",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 686445,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 435913400792200,
+				"name": "Trees 4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5211725,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 605856480087592,
+				"name": "Large Rock",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3872228,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 511985159089381,
+				"name": "Grey Rocks",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 120,
+						"height": 140,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4953932,
+						"collisionPoly": {
+							"points": [
+								0.5083333333333333,
+								0,
+								1,
+								0.25,
+								1,
+								0.7571428571428571,
+								0.49166666666666664,
+								1,
+								0,
+								0.7571428571428571,
+								0.016666666666666666,
+								0.2357142857142857
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 213338489144869,
+				"name": "Brown Rocks",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

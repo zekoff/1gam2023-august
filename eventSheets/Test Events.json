@@ -70,11 +70,11 @@
 								{
 									"id": "set-at-xy",
 									"objectClass": "TerrainArray",
-									"sid": 119669284044841,
+									"sid": 906831833890099,
 									"parameters": {
 										"x": "loopindex(\"column\")",
 										"y": "loopindex(\"row\")",
-										"value": "\"Mine\""
+										"value": "choose(\"Mine\", \"Castle\", \"Keep\", \"Bowyer\", \"Blacksmith\", \"Ruins\", \"Fort\", \"Windmill\", \"Empty\", \"House\", \"Church\", \"Farm\", \"Stable\", \"Trees 1\", \"Trees 3\")"
 									}
 								}
 							],
@@ -94,38 +94,101 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 449739472657934,
+					"children": [
 						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 239152435785940,
-							"parameters": {
-								"object-to-create": "Tile",
-								"layer": "0",
-								"x": "TerrainArray.CurX * 150 + 100",
-								"y": "TerrainArray.CurY * 150 + 100",
-								"create-hierarchy": false,
-								"template-name": "\"\""
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "evaluate-expression",
+									"objectClass": "System",
+									"sid": 163357548283137,
+									"parameters": {
+										"value": "TerrainArray.CurY % 2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"type": "comment",
+									"text": "Odd row"
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 295443028316279,
+									"parameters": {
+										"object-to-create": "Tile",
+										"layer": "0",
+										"x": "TerrainArray.CurX * 119 + 160",
+										"y": "TerrainArray.CurY * (140-36) + 100",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 756323125439895
 						},
 						{
-							"callFunction": "LogDebugMessage",
-							"sid": 259698984307229,
-							"parameters": [
-								"\"Tile content: \" & TerrainArray.CurValue & newline"
-							]
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 814442372936658
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 754747066984963,
+									"parameters": {
+										"object-to-create": "Tile",
+										"layer": "0",
+										"x": "TerrainArray.CurX * 119 + 100",
+										"y": "TerrainArray.CurY * (140-36) + 100",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 101911955519983
 						},
 						{
-							"id": "set-animation",
-							"objectClass": "Tile",
-							"sid": 182342043565509,
-							"parameters": {
-								"animation": "TerrainArray.CurValue",
-								"from": "beginning"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-last-created",
+									"objectClass": "System",
+									"sid": 167399917934317,
+									"parameters": {
+										"object": "Tile"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "LogDebugMessage",
+									"sid": 406225574817809,
+									"parameters": [
+										"\"Tile content: \" & TerrainArray.CurValue"
+									]
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Tile",
+									"sid": 783932211852899,
+									"parameters": {
+										"animation": "TerrainArray.CurValue",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 106903386940016
 						}
-					],
-					"sid": 449739472657934
+					]
 				}
 			]
 		}
